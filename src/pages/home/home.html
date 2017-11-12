@@ -1,14 +1,60 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+  <ion-grid>
+    <div class="top">
+    <ion-row>
+      <ion-col>
+        <span>Ville : {{currentWeather.name}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        Longitude : {{currentWeather.coords.longitude}}
+      </ion-col>
+      <ion-col>
+        Latitude : {{currentWeather.coords.latitude}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        Lever de soleil : {{currentWeather.sunrise |date:'HH:mm'}}
+      </ion-col>
+      <ion-col>
+        Coucher de soleil : {{currentWeather.sunset | date:'HH:mm'}}
+      </ion-col>
+    </ion-row>
+  </div>
+    <br>
+    <ion-row>
+      <ion-col>
+        Température : {{currentWeather.temperatures.temp}}°C
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        Minimale : {{currentWeather.temperatures.temp_min}}°C
+      </ion-col>
+      <ion-col>
+        Maximale : {{currentWeather.temperatures.temp_max}}°C
+      </ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+        <ion-col>
+          Couverture nuageuse : {{currentWeather.weatherConditions.clouds}} %
+        </ion-col>
+        <ion-col>
+          {{currentWeather.weatherConditions.conditionsDescription}}
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        Humidité : {{currentWeather.weatherConditions.humidity}} %
+      </ion-col>
+      <ion-col>
+        Pression : {{currentWeather.weatherConditions.pressure}} hPa
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
 </ion-content>

@@ -1,8 +1,8 @@
 {
   "name": "JustWeather",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Rafik Zebdi",
+  "homepage": "http://www.rafikzebdi.com/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -35,5 +35,5 @@
     "@ionic/app-scripts": "3.1.0",
     "typescript": "2.4.2"
   },
-  "description": "An Ionic project"
+  "description": "Simple weather app"
 }
