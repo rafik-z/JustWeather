@@ -1,6 +1,6 @@
 <ion-content>
   <ion-grid>
-    <div class="top">
+    <ion-grid class="top">
     <ion-row>
       <ion-col>
         <span>Ville : {{currentWeather.name}}</span>
@@ -22,8 +22,9 @@
         Coucher de soleil : {{currentWeather.sunset | date:'HH:mm'}}
       </ion-col>
     </ion-row>
-  </div>
+  </ion-grid>
     <br>
+    <ion-grid class="top">
     <ion-row>
       <ion-col>
         Température : {{currentWeather.temperatures.temp}}°C
@@ -37,7 +38,9 @@
         Maximale : {{currentWeather.temperatures.temp_max}}°C
       </ion-col>
     </ion-row>
+  </ion-grid>
     <br>
+    <ion-grid class="top">
     <ion-row>
         <ion-col>
           Couverture nuageuse : {{currentWeather.weatherConditions.clouds}} %
@@ -54,6 +57,7 @@
         Pression : {{currentWeather.weatherConditions.pressure}} hPa
       </ion-col>
     </ion-row>
+    </ion-grid>
   </ion-grid>
 
 
